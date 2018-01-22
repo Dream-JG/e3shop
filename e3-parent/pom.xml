@@ -261,4 +261,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<modules>
+		<module>e3-manager-web</module>
+	</modules>
 </project>

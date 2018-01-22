@@ -7,19 +7,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.zcib.e3shop.pojo.TbItem;
-import cn.zcib.e3shop.service.ItemSrervice;
+import cn.zcib.e3shop.service.ItemService;
 
+
+
+/**
+ * 商品管理Controller
+ * <p>Title: ItemController</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.cn</p> 
+ * @version 1.0
+ */
 @Controller
 public class ItemController {
-	
+
 	@Autowired
-	private ItemSrervice itemSrervice;
+	private ItemService itemService;
 	
 	@RequestMapping("/item/{itemId}")
 	@ResponseBody
-	public TbItem getItemByID(@PathVariable Long itemId) {
-		
-		return itemSrervice.getItemById(itemId);
+	public TbItem getItemById(@PathVariable Long itemId) {
+		TbItem tbItem = itemService.getItemById(itemId);
+		return tbItem;
 	}
+	
 
 }
+

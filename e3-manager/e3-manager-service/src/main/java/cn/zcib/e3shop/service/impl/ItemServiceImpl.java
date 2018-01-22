@@ -9,10 +9,10 @@ import cn.zcib.e3shop.mapper.TbItemMapper;
 import cn.zcib.e3shop.pojo.TbItem;
 import cn.zcib.e3shop.pojo.TbItemExample;
 import cn.zcib.e3shop.pojo.TbItemExample.Criteria;
-import cn.zcib.e3shop.service.ItemSrervice;
+import cn.zcib.e3shop.service.ItemService;
 
 @Service
-public class ItemServiceImpl implements ItemSrervice {
+public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private TbItemMapper itemMapper;

@@ -2,7 +2,7 @@ package cn.zcib.e3shop.service;
 
 import cn.zcib.e3shop.pojo.TbItem;
 
-public interface ItemSrervice {
+public interface ItemService {
 	 
 	TbItem getItemById(long itemId);
 

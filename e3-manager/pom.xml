@@ -22,7 +22,6 @@
   	<module>e3-manager-dao</module>
   	<module>e3-manager-interface</module>
   	<module>e3-manager-service</module>
-  	<module>e3-manager-web</module>
   </modules>
   
   <!-- 配置tomcat插件 -->
@@ -33,7 +32,7 @@
   			<artifactId>tomcat7-maven-plugin</artifactId>
   			<configuration>
   				<path>/</path>
-  				<port>8080</port>
+  				<port>8181</port>
   			</configuration>
   		</plugin>
   	
